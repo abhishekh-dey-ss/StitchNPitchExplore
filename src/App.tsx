@@ -535,9 +535,7 @@ function App() {
           onBack={handleCloseWinner}
           onOpenElitePitchAudit={() => setCurrentTab('elite-audit')}
         />
-      )}
-
-        {/* Elite Winner Display Overlay */}
+        )}
         {currentEliteWinner && (
           <EliteWinnerDisplay
             elite={currentEliteWinner}
