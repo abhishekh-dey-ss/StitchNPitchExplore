@@ -544,7 +544,6 @@ function App() {
             onBack={handleCloseEliteWinner}
           />
         )}
-        )}
 
       {/* Password Modal */}
       <PasswordModal
