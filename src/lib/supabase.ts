@@ -76,6 +76,44 @@ export type Database = {
           created_at?: string;
         };
       };
+      elite_winners: {
+        Row: {
+          id: string;
+          guide_id: number;
+          name: string;
+          department: string;
+          supervisor: string;
+          timestamp: string;
+          elite_timestamp: string;
+          chat_ids: string[];
+          elite_chat_ids: string[];
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          guide_id: number;
+          name: string;
+          department: string;
+          supervisor: string;
+          timestamp: string;
+          elite_timestamp: string;
+          chat_ids?: string[];
+          elite_chat_ids?: string[];
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          guide_id?: number;
+          name?: string;
+          department?: string;
+          supervisor?: string;
+          timestamp?: string;
+          elite_timestamp?: string;
+          chat_ids?: string[];
+          elite_chat_ids?: string[];
+          created_at?: string;
+        };
+      };
     };
   };
 };
