@@ -491,6 +491,7 @@ function App() {
         currentTab={currentTab}
         onTabChange={setCurrentTab}
         winnerCount={winners.length}
+        eliteWinnerCount={eliteWinners.length}
         onOpenWinHistoryDashboard={() => setIsWinHistoryDashboardOpen(true)}
         onOpenExportData={() => setIsExportDataOpen(true)}
         onOpenBackupRestore={() => setIsBackupRestoreOpen(true)}
@@ -529,12 +530,13 @@ function App() {
 
       {/* Winner Display Overlay */}
       {currentWinner && (
-          eliteWinnerCount={eliteWinners.length}
         <WinnerDisplay
           winner={currentWinner}
           onBack={handleCloseWinner}
           onOpenElitePitchAudit={() => setCurrentTab('elite-audit')}
         />
+      )}
+
         {/* Elite Winner Display Overlay */}
         {currentEliteWinner && (
           <EliteWinnerDisplay
@@ -542,8 +544,7 @@ function App() {
             onBack={handleCloseEliteWinner}
           />
         )}
-
-      )}
+        )}
 
       {/* Password Modal */}
       <PasswordModal
