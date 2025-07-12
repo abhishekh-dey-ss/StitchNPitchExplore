@@ -617,13 +617,13 @@ function App() {
       <FailAnimation 
         isActive={showFailAnimation} 
         guideName={failedGuideName}
-
-        {/* Elite Fail Animation */}
-        <EliteFailAnimation 
-          isActive={showEliteFailAnimation} 
         onClose={handleCloseFail}
-          onClose={handleCloseEliteFail}
-        />
+      />
+
+      {/* Elite Fail Animation */}
+      <EliteFailAnimation 
+        isActive={showEliteFailAnimation} 
+        onClose={handleCloseEliteFail}
       />
     </div>
   );
