@@ -564,8 +564,10 @@ function App() {
         }}
         guideName={selectedGuide?.name || ''}
         chatIds={selectedChatIds}
-        {/* Elite Password Modal */}
-        <ElitePasswordModal
+      />
+
+      {/* Elite Password Modal */}
+      <ElitePasswordModal
           isOpen={isElitePasswordModalOpen}
           onClose={() => {
             setIsElitePasswordModalOpen(false);
@@ -582,7 +584,6 @@ function App() {
           }}
           elite={selectedElite!}
           chatIds={selectedEliteChatIds}
-        />
 
       />
 
